@@ -1,0 +1,902 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td,
+span,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-touch-callout: none;
+}
+html {
+  height: 100%;
+}
+a {
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  -webkit-touch-callout: none;
+  vertical-align: bottom;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+  list-style-type: none;
+}
+body {
+  height: 100%;
+}
+.TY_clear {
+  clear: both;
+}
+.text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.font_22 {
+  font-size: 22px;
+}
+.font_26 {
+  font-size: 26px;
+}
+.font_32 {
+  font-size: 32px;
+}
+.Font_Color {
+  color: #ffffff;
+}
+.Auxiliary_Color {
+  background: #e9132c;
+}
+.Body_Color {
+  background: #343434;
+}
+.ThemeStyle {
+  background: #000000;
+}
+.priceColor {
+  color: #ff0000;
+}
+.delCOlor {
+  color: #f9f9f9;
+}
+.Border_Font {
+  border-color: #ffffff;
+}
+.Auxiliary_BorColor {
+  border-color: #e9132c;
+}
+.Theme_BorColor {
+  border-color: #000000;
+}
+.TY_section {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+.TY_Modulebox_header {
+  width: 1920px;
+  height: 129px;
+  position: relative;
+}
+.TY_Modulebox_logo {
+  width: 12%;
+  position: relative;
+}
+.TY_Modulebox_nav {
+  width: 88%;
+  height: 127px;
+  position: relative;
+}
+.TY_Modulebox_banner {
+  width: 1920px;
+  overflow: hidden;
+  position: relative;
+}
+.TY_Modulebox_InPro {
+  width: 1920px;
+  overflow: hidden;
+  height: 351px;
+  position: relative;
+}
+.TY_Modulebox_Split_field {
+  display: -webkit-flex;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+.TY_Modulebox_left {
+  width: 300px;
+  height: 1080px;
+  position: relative;
+}
+.TY_Horizontal .TY_Modulebox_logo {
+  width: 300px;
+  height: 156px;
+  position: relative;
+}
+.TY_Modulebox_nav2 {
+  position: relative;
+  height: 635px;
+}
+.TY_Modulebox_two_code {
+  width: 70%;
+  margin: 0 15%;
+  position: relative;
+}
+.TY_Modulebox_right {
+  width: 1620px;
+  height: 1080px;
+  box-sizing: border-box;
+  position: relative;
+}
+.TY_Modulebox_DX {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+.TY_Moudlebox_dxhead {
+  width: 154px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+#previewWrapper .font_22 {
+  font-size: 14px;
+}
+#previewWrapper .font_26 {
+  font-size: 16px;
+}
+#previewWrapper .font_32 {
+  font-size: 22px;
+}
+#previewWrapper .TY_section {
+  width: 960px;
+  height: 540px;
+}
+#previewWrapper .TY_Modulebox_header {
+  width: 960px;
+  height: 63px;
+}
+#previewWrapper .TY_Modulebox_logo {
+  width: 12%;
+}
+#previewWrapper .TY_Modulebox_nav {
+  width: 88%;
+  height: 61px;
+}
+#previewWrapper .TY_Modulebox_banner {
+  width: 960px;
+}
+#previewWrapper .TY_Modulebox_InPro {
+  width: 960px;
+  height: 177px;
+}
+#previewWrapper .TY_Modulebox_left {
+  width: 160px;
+  height: 540px;
+}
+#previewWrapper .TY_Horizontal .TY_Modulebox_logo {
+  width: 160px;
+  height: 83px;
+}
+#previewWrapper .TY_Modulebox_nav2 {
+  position: relative;
+  height: 310px;
+}
+#previewWrapper .TY_Modulebox_two_code {
+  width: 70%;
+  margin: 0 15%;
+}
+#previewWrapper .TY_Modulebox_Split_field {
+  display: -webkit-flex;
+  width: 960px;
+  height: 540px;
+}
+#previewWrapper .TY_Modulebox_right {
+  width: 800px;
+  height: 540px;
+  box-sizing: border-box;
+}
+#previewWrapper .TY_Modulebox_DX {
+  width: 960px;
+  height: 540px;
+}
+#previewWrapper .TY_Moudlebox_dxhead {
+  width: 106px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+#previewWrapper .TY_section .TY_header nav .TY_nav_li a {
+  line-height: 60px;
+}
+#previewWrapper .TY_header .TY_Modulebox_nav nav {
+  height: 60px;
+}
+#previewWrapper .TY_round li {
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+}
+#previewWrapper .TY_section .TY_Horizontal nav li a {
+  line-height: 40px;
+}
+#previewWrapper .TY_index_product p {
+  height: 48px;
+  line-height: 24px;
+}
+#previewWrapper .TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name p {
+  max-height: 37px;
+  line-height: 18px;
+}
+#previewWrapper .TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name .TY_price del {
+  font-size: 12px;
+}
+#previewWrapper .TY_section .TY_list .TY_list_ul li {
+  padding: 5px 10px 10px 5px;
+}
+#previewWrapper .TY_Information_box p {
+  overflow: hidden;
+  height: 98px;
+}
+#previewWrapper .TY_section .TY_dx_box ul li a .TY_Information_box .TY_two_box {
+  padding: 4% 5% 1% 0;
+}
+#previewWrapper .TY_section .TY_dx_box ul li a .TY_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.TY_section {
+  overflow: hidden;
+}
+.TY_section .TY_header {
+  width: 100%;
+  display: -webkit-flex;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+.TY_section .TY_header .TY_logo {
+  position: relative;
+  width: 100%;
+}
+.TY_section .TY_header .TY_logo img {
+  width: 100%;
+}
+.TY_section .TY_header nav {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.TY_section .TY_header nav .TY_nav_li {
+  text-align: right;
+  height: 100%;
+}
+.TY_section .TY_header nav .TY_nav_li li {
+  height: 100%;
+  padding: 0 2%;
+  position: relative;
+  display: inline-block;
+}
+.TY_section .TY_header nav .TY_nav_li a {
+  display: block;
+  line-height: 126px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.TY_section .TY_header .TY_morenav {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  z-index: 1;
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box {
+  -webkit-transition: all 0.5s ease-out 0s;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  max-width: 70%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  -webkit-box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box ul {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  height: 100%;
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box ul li {
+  padding: 0 10px;
+  display: inline-block;
+  height: 100%;
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box ul li a {
+  display: block;
+  line-height: 300%;
+  height: 100%;
+  white-space: nowrap;
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box .morenav_btn {
+  display: -webkit-flex;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.TY_section .TY_header .TY_morenav .TY_morenav_box .morenav_btn div {
+  margin: auto auto 10px;
+  -webkit-transition: -webkit-transform 500ms;
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  -webkit-transform: rotate(-45deg);
+}
+.TY_section .TY_header .TY_morenav .TY_show .morenav_btn div {
+  -webkit-transform: rotate(135deg);
+}
+.TY_section .TY_banner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.TY_section .TY_banner img {
+  width: 100%;
+}
+.TY_section .TY_banner .TY_round {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+.TY_section .TY_banner .TY_round li {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: inline-block;
+  border-width: 4px;
+  border-style: solid;
+}
+.TY_section .TY_index_product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.TY_section .TY_index_product li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.TY_section .TY_index_product li a {
+  width: 16.6%;
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
+  line-height: 150%;
+}
+.TY_section .TY_index_product li a .TY_img {
+  position: relative;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.TY_section .TY_index_product li a .TY_img img {
+  width: 100%;
+}
+.TY_section .TY_index_product li a p {
+  line-height: 30px;
+  height: 60px;
+}
+.TY_section .TY_Horizontal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.TY_section .TY_Horizontal .TY_logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+}
+.TY_section .TY_Horizontal .TY_logo img {
+  width: 100%;
+}
+.TY_section .TY_Horizontal nav {
+  padding-left: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.TY_section .TY_Horizontal nav li {
+  position: relative;
+}
+.TY_section .TY_Horizontal nav li.TY_active::after {
+  content: '';
+  background: #ffffff;
+  height: 100%;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 10px 0;
+  box-sizing: border-box;
+  width: 4%;
+  position: absolute;
+  left: -6%;
+  top: 0;
+}
+.TY_section .TY_Horizontal nav li.TY_active a {
+  text-indent: 5%;
+}
+.TY_section .TY_Horizontal nav li a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 70px;
+  color: #ffffff;
+}
+.TY_section .TY_Horizontal .TY_two_code {
+  width: 100%;
+  text-align: center;
+}
+.TY_section .TY_Horizontal .TY_two_code p {
+  color: #ffffff;
+  line-height: 200%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.TY_section .TY_Horizontal .TY_two_code img {
+  width: 100%;
+}
+.TY_section .TY_list,
+.TY_section .TY_DX,
+.TY_section .TY_preferential {
+  background: #343434;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.TY_section .TY_list .TY_list_move {
+  height: 100%;
+}
+.TY_section .TY_list.TY_move_box {
+  padding-right: 1%;
+}
+.TY_section .TY_list .TY_list_ul {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+.TY_section .TY_list .TY_list_ul ul {
+  display: -webkit-flex;
+  flex-flow: row wrap;
+}
+.TY_section .TY_list .TY_list_ul li {
+  width: 25%;
+  padding: 1.5% .8% .8% 1.5%;
+  box-sizing: border-box;
+  position: relative;
+}
+.TY_section .TY_list .TY_list_ul li a {
+  display: block;
+  position: relative;
+}
+.TY_section .TY_list .TY_list_ul li a::after,
+.TY_section .TY_list .TY_list_ul li a::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -12px;
+  top: 9px;
+  z-index: 1;
+  background: #000000;
+}
+.TY_section .TY_list .TY_list_ul li a::before {
+  right: -7px;
+  top: 4px;
+  z-index: 2;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box {
+  overflow: hidden;
+  width: 100%;
+  background: #000000;
+  position: relative;
+  z-index: 3;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_Information_box {
+  display: -webkit-flex;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name {
+  width: 70%;
+  padding: 0 5px 0 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  line-height: 130%;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name p {
+  max-height: 80px;
+  overflow: hidden;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name .TY_price {
+  line-height: 180%;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name .TY_price b {
+  color: #ff0000;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_name .TY_price del {
+  color: #f9f9f9;
+  font-size: 20px;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_img img {
+  width: 100%;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_two_box {
+  position: relative;
+  width: 30%;
+  padding: 0 5% 5% 0;
+  box-sizing: border-box;
+}
+.TY_section .TY_list .TY_list_ul li .TY_list_box .TY_two_box img {
+  width: 100%;
+}
+.TY_section .TY_product {
+  padding: 1% 1% 1% 1%;
+}
+.TY_section .TY_product .TY_product_box {
+  background: #000000;
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+}
+.TY_section .TY_product .TY_product_box .TY_proleft {
+  width: 45%;
+  padding: 5% 1%;
+  box-sizing: border-box;
+  position: relative;
+}
+.TY_section .TY_product .TY_product_box .TY_proleft .TY_round {
+  bottom: 10px;
+}
+.TY_section .TY_product .TY_product_box .TY_proleft .TY_title {
+  border-top: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 200%;
+  padding-top: 5%;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.TY_section .TY_product .TY_product_box .TY_proright {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  color: #ffffff;
+  width: 55%;
+  padding: 3% 5%;
+  box-sizing: border-box;
+  line-height: 150%;
+}
+.TY_section .TY_product .TY_product_box .TY_proright .TY_price {
+  position: relative;
+  padding-bottom: 1%;
+}
+.TY_section .TY_product .TY_product_box .TY_proright .TY_price b {
+  color: #ff0000;
+  padding-right: 1%;
+}
+.TY_section .TY_product .TY_product_box .TY_proright .TY_price del {
+  color: #f9f9f9;
+}
+.TY_section .TY_product .TY_product_box .TY_proright .TY_two_code {
+  float: right;
+  position: relative;
+  top: -3%;
+  margin: 0 0 5% 5%;
+  width: 31%;
+}
+.TY_section .TY_product .TY_product_box .TY_proright .TY_two_code img {
+  width: 100%;
+}
+.TY_section .TY_dx_header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.TY_section .TY_dx_header img {
+  width: 100%;
+}
+.TY_section .TY_dx_header .TY_two_code {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10% 10% 0 10%;
+  line-height: 200%;
+}
+.TY_section .TY_dx_header .TY_two_code p {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.TY_section .TY_dx_box {
+  padding: 2% 2% 2% 0;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.TY_section .TY_dx_box .TY_dx_ul {
+  height: 100%;
+}
+.TY_section .TY_dx_box ul {
+  display: -webkit-flex !important;
+  height: 100%;
+}
+.TY_section .TY_dx_box ul li {
+  width: 50%;
+  padding-left: 2%;
+  box-sizing: border-box;
+  height: 100%;
+}
+.TY_section .TY_dx_box ul li a {
+  display: block;
+  background: #fff;
+  height: 100%;
+}
+.TY_section .TY_dx_box ul li a img {
+  width: 100%;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box {
+  display: -webkit-flex;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box .TY_name {
+  width: 70%;
+  padding: 0 5px 0 5%;
+  box-sizing: border-box;
+  color: #ffffff;
+  line-height: 150%;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box .TY_name .TY_price {
+  color: #ff0000;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box .TY_name .TY_price del {
+  padding-left: 1%;
+  color: #969696;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box .TY_two_box {
+  position: relative;
+  width: 30%;
+  padding: 4% 5% 5% 0;
+  box-sizing: border-box;
+  text-align: right;
+  color: #ffffff;
+  line-height: 200%;
+}
+.TY_section .TY_dx_box ul li a .TY_Information_box .TY_two_box img {
+  padding-left: 30%;
+  box-sizing: border-box;
+  width: 100%;
+}
+.TY_section .TY_dx_box ul li a .TY_title {
+  border-top: 1px solid #ffffff;
+  margin: 0 3%;
+  padding: 5%;
+  text-align: center;
+  color: #ffffff;
+}
+.TY_section .TY_pre_box {
+  height: 100%;
+}
+.TY_section .TY_preferential_box {
+  height: 100%;
+}
+.TY_section .TY_preferential_box ul {
+  height: 100%;
+  display: -webkit-flex;
+  position: relative;
+}
+.TY_section .TY_preferential_box li {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 2%;
+  position: relative;
+  display: -webkit-flex;
+  overflow: hidden;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li {
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  line-height: 150%;
+  position: relative;
+  color: #fff;
+  margin-top: auto;
+  padding-top: 14px;
+  overflow: hidden;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li::after,
+.TY_section .TY_preferential_box li .TY_preferential_li::before {
+  content: '';
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: 2.5%;
+  top: 2%;
+  background: url(../images/TY_line.png) repeat;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li::before {
+  left: auto;
+  right: 2.5%;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li .TY_preferenbg {
+  position: relative;
+  top: -3px;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  display: -webkit-flex;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li .TY_preferenbg li {
+  width: 20px;
+  height: 12px;
+  margin-right: 3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #343434;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li .TY_title {
+  padding: 5% 0 20%;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li .TY_two_code {
+  padding: 5% 0;
+  margin-top: 15%;
+  position: relative;
+}
+.TY_section .TY_preferential_box li .TY_preferential_li .TY_two_code img {
+  width: 100%;
+}
+.TY_section .TY_preferential_box li .TY_color1 {
+  background: #fd5a5a;
+}
+.TY_section .TY_preferential_box li .TY_color2 {
+  background: #4fd5e5;
+}
+.TY_section .TY_preferential_box li .TY_color3 {
+  background: #685cd9;
+}
+.TY_section .TY_preferential_box li .TY_color4 {
+  background: #41bb4c;
+}
+.TY_section .TY_video_btn {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  background: url(../images/video_btn.png) no-repeat;
+}
+.TY_section .TY_video_box {
+  -webkit-transform: scale(0);
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+}
+.TY_section #TY_video {
+  width: 100%;
+}
+.TY_section .TY_video_hide {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 102;
+}
+.TY_section .TY_video_hide::after,
+.TY_section .TY_video_hide::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 27px;
+  width: 40px;
+  height: 5px;
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transform: rotate(45deg);
+}
+.TY_section .TY_video_hide::before {
+  -webkit-transform: rotate(-45deg);
+}
+.TY_section .TY_video_show {
+  -webkit-animation: TY_scale 1s 0s ease-out both;
+}
+@-webkit-keyframes TY_scale {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@media only screen and (max-width: 980px) {
+  #previewWrapper .TY_list .TY_list_ul li {
+    width: 33.3%;
+  }
+}
