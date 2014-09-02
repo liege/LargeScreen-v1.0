@@ -9,6 +9,7 @@
     	 	timeout:2000
      	});
      	var slideFlag = $('.TY_round').find('li');
+     	slideFlag.eq(0).addClass("ThemeStyle");
      	var slide = new TouchSlider({id:'TY_banner',before:function(index){
      	        slideFlag.removeClass('ThemeStyle');
      	        slideFlag.eq(index).addClass('ThemeStyle');

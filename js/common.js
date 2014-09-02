@@ -59,41 +59,41 @@ $('.menuToggle').on('click', function () {
 
 
 //编辑内容开启与关闭
-var editor_mask = function(){
-    if ($('.editor_mask').hasClass('mask_in')) {
-    	$('.editor_mask').removeClass('mask_in');
-        $('.editor_mask').addClass('mask_out');
-        $.later(function(){
-            $('.editor_mask').removeClass('mask_out');
-        },500);
-    } else {
-        $('.editor_mask').addClass('mask_in');
-        $('.editor_mask').removeClass('mask_out');
-    }
-};
-$('.previewedit').on('click', function () {
-    editor_mask();
-});
-$('.editor_mask_close').on('click', function () {
-    editor_mask();
-});
-
-//组件打开与关闭
-var module_mask = function(){
-    if ($('.module_mask').hasClass('mask_in')) {
-        $('.module_mask').removeClass('mask_in');
-        $('.module_mask').addClass('mask_out');
-        $.later(function(){
-            $('.module_mask').removeClass('mask_out');
-        },500);
-    } else {
-        $('.module_mask').addClass('mask_in');
-        $('.module_mask').removeClass('mask_out');
-    }
-};
-$('.module_add').on('click', function () {
-    module_mask();
-});
-$('.module_mask_close').on('click', function () {
-    module_mask();
-});
+// var editor_mask = function(){
+    // if ($('.editor_mask').hasClass('mask_in')) {
+    	// $('.editor_mask').removeClass('mask_in');
+        // $('.editor_mask').addClass('mask_out');
+        // $.later(function(){
+            // $('.editor_mask').removeClass('mask_out');
+        // },500);
+    // } else {
+        // $('.editor_mask').addClass('mask_in');
+        // $('.editor_mask').removeClass('mask_out');
+    // }
+// };
+// $('.previewedit').on('click', function () {
+    // editor_mask();
+// });
+// $('.editor_mask_close').on('click', function () {
+    // editor_mask();
+// });
+// 
+// //组件打开与关闭
+// var module_mask = function(){
+    // if ($('.module_mask').hasClass('mask_in')) {
+        // $('.module_mask').removeClass('mask_in');
+        // $('.module_mask').addClass('mask_out');
+        // $.later(function(){
+            // $('.module_mask').removeClass('mask_out');
+        // },500);
+    // } else {
+        // $('.module_mask').addClass('mask_in');
+        // $('.module_mask').removeClass('mask_out');
+    // }
+// };
+// $('.module_add').on('click', function () {
+    // module_mask();
+// });
+// $('.module_mask_close').on('click', function () {
+    // module_mask();
+// });

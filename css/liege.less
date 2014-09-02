@@ -1,0 +1,121 @@
+/*dialog*/
+.ui-dialog{
+	.choice_content{margin-left: 130px;margin-top: 0; float: none;
+		.control_label{float: left;}
+	}
+}
+//编辑删除按钮
+.actions_opr{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+//dialog style
+.piclist_logo,.piclist_banner{
+    width:auto;
+    overflow: hidden;
+    margin-top: 20px;
+    background: #f5f5f5;
+    border-radius:5px;
+    max-width:800px;
+    li{width: 100px;height: 100px;float: left;margin: 10px; padding: 2px; border:1px solid #eee; cursor:pointer;}
+    li:hover,li.current{border-color:#f90;}
+    li.active{ opacity:0.8;border:none!important; position: relative;}
+    li.active:before{content:"当前使用"; color: #f90; width: 100%; position: absolute; left: 0; top: 0; padding: 5px; background: url(../images/active.png) no-repeat 70px 8px; background-size:14px 14px;text-shadow: 0 1px 2px rgba(255,255,0,0.3);}
+    img{width: 100%; height: 100%;}
+}
+.TY_logo{
+  img{width: 115px;height: 60px;}
+}
+//
+.control-group{
+  // overflow: hidden;
+  margin-bottom: 10px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  &:after{
+    clear: both;
+  }
+  a{
+    display: inline-block;
+    line-height: 18px;
+    padding-top: 5px;
+    color: #09f;
+  }
+  .hint{
+    font-size:12px;
+    opacity: 0.6;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  label{
+    cursor:default;
+    text-align:right;
+    display: block;
+    float: left;
+    padding-top: 5px;
+    line-height: 18px;
+  }
+  .control{
+    &.logo{
+      img{width: 116px;height: 60px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+      }
+    }
+    margin-left: 90px;
+    //float: left;
+  }           
+}
+i{display: inline-block; width: 15px;height: 15px;}
+.add_icon{ background: url(../images/icon-add.png) center center no-repeat;}
+.arrow_icon{ background: url(../images/arrow.png) 0 0 no-repeat;}
+.options{
+  cursor:pointer;
+  border:1px solid #eee; background: #fff; padding: 10px;
+  i{margin:0 8px -2px 0;}
+  position: relative;
+  .control-choice{
+    float: left;
+    border:1px solid #eee;
+    width: 80px;
+    height: 52px;
+    line-height:52px;
+    padding: 0 10px;
+    position: relative;
+    img{
+      height:100%;
+      max-width:100%;
+    }
+    .hint{
+      position: absolute;
+      z-index:10;
+      color: #fff;
+      bottom: 0;
+      left: 0;
+      line-height:24px;
+      font-size:14px;
+      font-weight:bold;
+      text-align:center;
+      width:100%;
+      background: rgba(0,0,0,0.9);
+    }
+  }
+}
+.ad_list{
+  li.active{
+    .choice_image{outline:2px dashed #f90;}
+    a{display: none;}
+  }
+}
+#TY_banner{
+  img{max-height:300px; width: 100%;}
+}
