@@ -4,11 +4,19 @@
 		.control_label{float: left;}
 	}
 }
+.module{
+  position: relative;
+}
+.activeModule{
+  outline:2px dashed rgba(255,128,0,0.8);
+}
 //编辑删除按钮
 .actions_opr{
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 99;
+  .deleModule{display: none;}
 }
 //dialog style
 .piclist_logo,.piclist_banner{
@@ -31,6 +39,7 @@
 .control-group{
   // overflow: hidden;
   margin-bottom: 10px;
+  font-size:12px;
   &:last-of-type{
     margin-bottom: 0;
   }
@@ -40,7 +49,7 @@
   a{
     display: inline-block;
     line-height: 18px;
-    padding-top: 5px;
+    // padding-top: 5px;
     color: #09f;
   }
   .hint{
@@ -55,8 +64,9 @@
     text-align:right;
     display: block;
     float: left;
-    padding-top: 5px;
+    // padding-top: 5px;
     line-height: 18px;
+    width: 90px;
   }
   .control{
     &.logo{
@@ -78,6 +88,17 @@
 i{display: inline-block; width: 15px;height: 15px;}
 .add_icon{ background: url(../images/icon-add.png) center center no-repeat;}
 .arrow_icon{ background: url(../images/arrow.png) 0 0 no-repeat;}
+.caret_icon{
+margin: 8px 0 0 8px;
+display: inline-block;
+width: 0;
+height: 0;
+vertical-align: top;
+border-top: 4px solid #000000;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+content: "";  
+}
 .options{
   cursor:pointer;
   border:1px solid #eee; background: #fff; padding: 10px;
@@ -110,6 +131,44 @@ i{display: inline-block; width: 15px;height: 15px;}
     }
   }
 }
+.link_to{float: left; width: auto; padding-right: 10px;
+  .link_tag{display: inline; position: relative; background: #468847; border-radius:4px;min-width: 110px;border: 1px solid rgba(0,0,0,0.125); color: #fff; padding:1px 3px; margin: 0 4px;}
+  .dele_tag{position: absolute; right: -8px; top:-8px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(153,153,153,0.6);
+    border-radius: 10px;
+    z-index: 2;
+    padding: 0;  
+  }
+  .dele_tag:hover{background: #000;}
+}
+.addSort{
+  float: left; position: relative;
+  .sort_list{
+    border: 1px solid rgba(0,0,0,0.125);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    min-width: 110px;
+    position: relative;
+    top:0px; left:0;
+    cursor:pointer;
+    display: none;
+    li{line-height:30px; padding: 0 10px; color: #666;font-size:12px;}
+    li:hover{background: #09f; color: #fff;}
+  }
+  &:hover{
+    .sort_list{display: block;}
+  }
+}
 .ad_list{
   li.active{
     .choice_image{outline:2px dashed #f90;}
@@ -118,4 +177,19 @@ i{display: inline-block; width: 15px;height: 15px;}
 }
 #TY_banner{
   img{max-height:300px; width: 100%;}
+}
+.TY_Modulebox_InPro{ 
+  .TY_product{padding: 0!important; position: absolute; z-index: 999; width: 100%;}
+  .sort_tag{
+    background: #f5f5f5;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border-top-right-radius:0;
+    border-bottom-right-radius:5px;
+    position: absolute;
+    li{line-height:26px; padding: 0 10px; color: #666;font-size:12px; float: left;}
+    li.tag{background: #468847; color: #fff;}
+    li:last-child{border-bottom-right-radius:5px;}
+  }
+  #TY_cp_scroller{top:20px}
 }

@@ -109,7 +109,7 @@
 							</div>
 							<div class="actions_opr">
 								<span id='change_logo' class="edit">编辑</span>
-								<span>删除</span>
+								<span class="deleModule">删除</span>
 							</div>							
 						</div>
 							<script type="text/html" id="menu_tmpl">
@@ -125,7 +125,7 @@
 							</div>
 							<div class="actions_opr">
 								<span id='add_type1' class="edit">编辑</span>
-								<span>删除</span>
+								<span class="deleModule">删除</span>
 							</div>
 							<!-- <div class="module_add Auxiliary_BorColor Body_Color" style="display: block">
 								<span class="Font_Color">+ 添加组件</span>
@@ -150,15 +150,26 @@
 						</div>
 						</script>
 					</div>
-					<div class="preview_actions Auxiliary_BorColor" style="display: block">
+					<div style="display: block">
 						<div class="actions_opr">
 							<span class="edit">编辑</span>
-							<span>删除</span>
+							<span class="deleModule">删除</span>
 						</div>
 					</div>
 				</div>
-				<div class="TY_Modulebox_InPro">
+				<div class="TY_Modulebox_InPro module">
+					<div class="TY_product"></div> 
 					<div class="TY_index_product ThemeStyle font_26">
+						<script type="text/html" id="product_tmpl">
+						<div class="dataWrap">
+						<ul class="sort_tag">
+							<li>已选择:</li>
+							{{each content}}
+								<li class="tag">{{= $value.text}}</li>
+							{{/each}}
+						</ul>	
+						</div>
+						</script>							
 						<ul id="TY_cp_scroller">
 							<li>
 								<a class="Font_Colorh" href="javascript:void(0);">
@@ -207,13 +218,15 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div class="preview_actions Auxiliary_BorColor">
+		
+					</div>	
+					<div class="Auxiliary_BorColor">
 						<div class="actions_opr">
-							<span class="previewedit">编辑</span>
-							<span>删除</span>
+							<span class="edit">编辑</span>
+							<span class="deleModule">删除</span>
 						</div>
 					</div>
+					
 				</div>
 			</section>
 			<!-- <script src="t1/js/zepto.js" type="text/javascript"></script>
@@ -294,7 +307,7 @@
 					</div>
 				</div>
 				<div class="choice_actions">
-					<span class="close_modal" href="#">+</span><span class="close_modal" href="#">×</span>
+					<!-- <span class="close_modal" href="#">+</span> --><span class="close_modal dele" href="#">×</span>
 				</div>
 			</li>
 			{{/each}}
@@ -305,6 +318,21 @@
 			</p>
 		</div>		
 	</div>
+</script>
+<!-- 产品编辑模块 -->
+<script id='edit_product' type="text/html">
+	 <div class="control-group replace">		
+		<label for="" class="control-label">选择来源：</label>
+		<div class="control">
+			<div class="link_to">
+				{{each content}}
+					<div class="link_tag">{{= $value.text}} <a href="javascript:;" class="dele_tag">×</a></div>
+				{{/each}}				
+			</div>
+			<a class="addSort" href="javascript:void(0)">设置展示产品类别<i class="caret_icon"></i>
+			</a>
+		</div>
+    </div>
 </script>
 <!-- 头部编辑模块 -->
 <script id='edit_menu' type="text/html">
@@ -324,7 +352,7 @@
 		</div>
     </div>
 </script>
-<!-- 改变图片 -->
+<!-- 改变logo图库 可通过data渲染-->
 <script id="bin_logo" type="text/html">
   <ul class="piclist_logo">
   	<li><img src="images/tmall.jpg" alt="" /></li>
@@ -334,7 +362,7 @@
   	<li><img src="images/logo.png" alt="" /></li>	  	
   </ul>
 </script> 
-<!-- 改变图片 -->
+<!-- 改变banner图库 可通过data渲染 -->
 <script id="bin_banner" type="text/html">
   <ul class="piclist_banner">
   	<li><img src="images/banner1.jpg" alt="" /></li>
@@ -345,6 +373,13 @@
   	<li><img src="images/ts3.jpg" alt="" /></li>  	
   </ul>
 </script> 
+<script id="bin_sort" type="text/html">
+	<ul class="sort_list">
+		{{each content}}
+			<li>{{= $value.text}}</li>
+		{{/each}}
+	</ul>
+</script>			
 <div class="alert" style="display:none"><i></i><span>正在处理您的请求...</span></div>
 <script type="text/javascript" src="js/jquery-1-8-3.js"></script>
 <script type="text/javascript" src='js/artDialog/dialog-min.js'></script>
@@ -357,14 +392,14 @@
 					<h4>页面类型</h4>
 					<div class="layout_type">
 						<form id='page_type_form'>
-							<input id='home_pg' name='type' data-sourcetype='up-center-down left-right' type='radio' value='0' />
-							<label for='home_pg' >首页</label>
-							<input id='list_pg' name='type' data-sourcetype='left-right' type='radio' value='1' />
-							<label for='list_pg' >列表页</label>
+							<input id='home_pg' name='type' data-sourcetype='up-center-down left-right list' type='radio' value='0' />
+							<label for='home_pg' >普通页</label>
+							<!-- <input id='list_pg' name='type' data-sourcetype='left-right' type='radio' value='1' />
+							<label for='list_pg' >列表页</label> -->
 							<input id='video_pg' name='type' data-sourcetype='left-right' disable='disable' type='radio' value='2' />
 							<label for='video_pg' >视频播放页</label>
-							<input id='self_pg' name='type' data-sourcetype='up-center-down left-right up-down' value='3' type='radio'/>
-							<label for='self_pg'>自定义页面</label>
+							<!-- <input id='self_pg' name='type' data-sourcetype='up-center-down left-right up-down' value='3' type='radio'/>
+							<label for='self_pg'>自定义页面</label> -->
 						</form>
 					</div>
 					<h4>添加新页面</h4>
@@ -386,6 +421,14 @@
 								</div>
 								<p class='text-center'>左右结构</p>
 							</li>
+							<li data-type='list' data-url='images/screenshot5.png'>
+								<div class="type_list">
+									<div class="icon_img">
+										<img src="images/pagetype/left-right.png">
+									</div>
+								</div>
+								<p class='text-center'>列表页</p>
+							</li>							
 							<li data-type='up-down' data-url='images/screenshot4.png'>
 								<div class="type_list">
 									<div class="icon_img"><img src="images/pagetype/t3.png"></div>
