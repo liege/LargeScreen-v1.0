@@ -149,7 +149,11 @@ edit.product = function(){
 		$.each(edit.data.content,function(i,v){
 			str+=v.text;
 		});
-		if(str.indexOf(txt)>-1){}else{
+		if(str.indexOf(txt)>-1){
+			$(this).animate({"text-indent":"3px"},100).animate({"text-indent":"-3px"},100)
+			.animate({"text-indent":"3px"},100).animate({"text-indent":"-3px"},100).animate({"text-indent":"0"},100);
+			return;
+		}else{
 		edit.data.content.push({text:$(this).text()});
 		edit.setDataForm(edit.data);
 		}
